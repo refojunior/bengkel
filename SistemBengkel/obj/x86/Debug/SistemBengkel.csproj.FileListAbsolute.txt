@@ -1,0 +1,10 @@
+c:\users\refo\documents\visual studio 2010\Projects\SistemBengkel\SistemBengkel\bin\Debug\SistemBengkel.exe
+c:\users\refo\documents\visual studio 2010\Projects\SistemBengkel\SistemBengkel\bin\Debug\SistemBengkel.pdb
+c:\users\refo\documents\visual studio 2010\Projects\SistemBengkel\SistemBengkel\obj\x86\Debug\SistemBengkel.Properties.Resources.resources
+c:\users\refo\documents\visual studio 2010\Projects\SistemBengkel\SistemBengkel\obj\x86\Debug\SistemBengkel.csproj.GenerateResource.Cache
+c:\users\refo\documents\visual studio 2010\Projects\SistemBengkel\SistemBengkel\obj\x86\Debug\SistemBengkel.exe
+c:\users\refo\documents\visual studio 2010\Projects\SistemBengkel\SistemBengkel\obj\x86\Debug\SistemBengkel.pdb
+c:\users\refo\documents\visual studio 2010\Projects\SistemBengkel\SistemBengkel\obj\x86\Debug\SistemBengkel.MasterCustomer.resources
+c:\users\refo\documents\visual studio 2010\Projects\SistemBengkel\SistemBengkel\obj\x86\Debug\SistemBengkel.MasterKendaraan.resources
+c:\users\refo\documents\visual studio 2010\Projects\SistemBengkel\SistemBengkel\obj\x86\Debug\SistemBengkel.Login.resources
+C:\Users\Refo\documents\visual studio 2010\Projects\SistemBengkel\SistemBengkel\obj\x86\Debug\SistemBengkel.csprojResolveAssemblyReference.cache
