@@ -22,6 +22,7 @@ namespace SistemBengkel
             fillComboBox();
         }
 
+
         public void fillComboBox()
         {
             con.Open();
@@ -36,11 +37,37 @@ namespace SistemBengkel
             con.Close();
         }
 
+        public void loadData()
+        {
+            //table kendaraan
+            con.Open();
+            string queryKendaraan = " SELECT a.id, a.customer_id, b.nama_customer, a.nama_kendaraan, a.merk, a.tahun, a.plat_nomor from tb_kendaraan a inner join tb_customer b on a.customer_id = b.id ";
+            SqlDataAdapter SDAKendaraan = new SqlDataAdapter(queryKendaraan, this.con);
+            DataTable dataKendaraan = new DataTable();
+            SDAKendaraan.Fill(dataKendaraan);
+            showKendaraanGrid.DataSource = dataKendaraan;
+
+            con.Close();
+        }
+
+        public void resetForm()
+        {
+            
+            namaKendaraanText.ReadOnly = false;
+            comboBoxCustomer.Enabled = true;
+
+            comboBoxCustomer.Text = "- Pilih ";
+            namaKendaraanText.Clear();
+            merkText.Clear();
+            tahunText.Clear();
+            platNomorText.Clear();
+        }
 
         private void MasterKendaraan_Load(object sender, EventArgs e)
         {
             //table kendaraan
-            string queryKendaraan = "SELECT * FROM tb_kendaraan";
+            con.Open();
+            string queryKendaraan = " SELECT a.id, a.customer_id, b.nama_customer, a.nama_kendaraan, a.merk, a.tahun, a.plat_nomor from tb_kendaraan a inner join tb_customer b on a.customer_id = b.id ";
             SqlDataAdapter SDAKendaraan = new SqlDataAdapter(queryKendaraan, this.con);
             DataTable dataKendaraan = new DataTable();
             SDAKendaraan.Fill(dataKendaraan);
@@ -59,16 +86,106 @@ namespace SistemBengkel
             if (customer != "- Pilih -" && namaKendaraanText.Text != "" && tahunText.Text != "" && platNomorText.Text != "")
             {
                 con.Open();
-                string insert = "INSERT INTO tb_kendaraan VALUES ('" + cust_id + "', '" + namaKendaraanText.Text + "', '" + merkText.Text + "', '" + tahunText.Text + "', '" + platNomorText.Text + "')";
-                cmd = new SqlCommand(insert, this.con);
-                cmd.ExecuteNonQuery();
+                string q = "SELECT * FROM tb_kendaraan WHERE customer_id = '" + cust_id + "' AND nama_kendaraan = '" + namaKendaraanText.Text + "'";
+                cmd = new SqlCommand(q, this.con);
+                reader = cmd.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    con.Close();
+                    con.Open();
+
+                    string update = "UPDATE tb_kendaraan SET merk = '" + merkText.Text + "', tahun = '" + tahunText.Text + "', plat_nomor = '" + platNomorText.Text + "' WHERE customer_id = '" + cust_id + "' AND nama_kendaraan = '" +namaKendaraanText.Text +"'";
+                    cmd = new SqlCommand(update, this.con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Berhasil mengedit data!");
+
+                }
+                else
+                {
+                    //close connection sebelumnya dan buka lagi biar bisa insert
+                    con.Close();
+                    con.Open();
+                    //ROW TIDAK ADA LAKUKAN PROSES INSERT
+                    
+                    string insert = "INSERT INTO tb_kendaraan VALUES ('" + cust_id + "', '" + namaKendaraanText.Text + "', '" + merkText.Text + "', '" + tahunText.Text + "', '" + platNomorText.Text + "')";
+                    cmd = new SqlCommand(insert, this.con);
+                    cmd.ExecuteNonQuery();
+                    
+                    MessageBox.Show("Berhasil menambahkan kendaraan");
+
+                }
                 con.Close();
-                MessageBox.Show("Berhasil menambahkan kendaraan");
+                
+                loadData();
+                showKendaraanGrid.Update();
+                showKendaraanGrid.Refresh();
+
+                resetForm();
             }
             else
             {
                 MessageBox.Show("Form ada yang kosong!!");
             }
         }
+
+        private void showKendaraanGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0)
+            {
+                return;
+            }
+
+            int index = e.RowIndex;
+
+            string id = showKendaraanGrid.Rows[index].Cells[1].Value.ToString();
+            string kendaraan = showKendaraanGrid.Rows[index].Cells[3].Value.ToString();
+            //read only kan
+            namaKendaraanText.ReadOnly = true;
+            comboBoxCustomer.Enabled = false;
+
+            //query ke db dengan parameter id yg di select
+            con.Open();
+            string q = "SELECT a.id, a.customer_id, b.nama_customer, a.nama_kendaraan, a.merk, a.tahun, a.plat_nomor from tb_kendaraan a inner join tb_customer b on a.customer_id = b.id WHERE a.customer_id = '" + id + "' AND a.nama_kendaraan = '" + kendaraan + "'";
+            cmd = new SqlCommand(q, this.con);
+            reader = cmd.ExecuteReader();
+            //tampilkan data di form
+            reader.Read();
+            
+            id_kendaraan.Text = reader["id"].ToString();
+            id_kendaraan.Visible = false;
+            comboBoxCustomer.Text = reader["customer_id"].ToString() + " - " + reader["nama_customer"].ToString();
+            namaKendaraanText.Text = reader["nama_kendaraan"].ToString();
+            merkText.Text = reader["merk"].ToString();
+            tahunText.Text = reader["tahun"].ToString();
+            platNomorText.Text = reader["plat_nomor"].ToString();
+
+            con.Close();
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            resetForm();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Yakin Hapus Data?", "Message", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                string id = id_kendaraan.Text;
+                con.Open();
+                string query = "DELETE FROM tb_kendaraan WHERE id = '" + id + "'";
+                cmd = new SqlCommand(query, this.con);
+                cmd.ExecuteNonQuery();
+                con.Close();
+                MessageBox.Show("Data berhasil dihapus!");
+
+                loadData();
+                showKendaraanGrid.Update();
+                showKendaraanGrid.Refresh();
+            }
+
+        }
+
+        
     }
 }
