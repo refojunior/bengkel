@@ -20,57 +20,11 @@ namespace SistemBengkel
         public MasterCustomer()
         {
             InitializeComponent();
-            fillComboBox();
+            
         }
 
-        /* 
-         -- CODINGAN MENU TARUH DISINI -- 
-        */
-
-        private void customerToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            panelCustomer.Visible = true;
-            panelKendaraan.Visible = false;
-        }
-
-
-        private void kendaraanToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-            panelCustomer.Visible = false;
-            panelKendaraan.Visible = true;
-        }
-
-        private void MasterCustomer_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Login login = new Login();
-            login.ShowDialog();
-        }
-
-        /* 
-         -- END CODINGAN MENU -- 
-        */
-
-        public void fillComboBox()
-        {
-            con.Open();
-            string query = "SELECT * FROM tb_customer";
-            SqlDataAdapter sda = new SqlDataAdapter(query, this.con);
-            DataTable dt = new DataTable();
-            sda.Fill(dt);
-            foreach (DataRow row in dt.Rows)
-            {
-                comboBoxCustomer.Items.Add(row["id"] + " - " +row["nama_customer"].ToString());
-            }
-            con.Close();
-        }
         
+                
         public void loadData()
         {
             con.Open();
@@ -104,15 +58,8 @@ namespace SistemBengkel
             DataTable data = new DataTable();
             SDA.Fill(data);
             showCustomersGrid.DataSource = data;
-
-            //table kendaraan
-            string queryKendaraan = "SELECT * FROM tb_kendaraan";
-            SqlDataAdapter SDAKendaraan = new SqlDataAdapter(queryKendaraan, this.con);
-            DataTable dataKendaraan = new DataTable();
-            SDAKendaraan.Fill(dataKendaraan);
-            showKendaraanGrid.DataSource = dataKendaraan;
-
             con.Close();
+           
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -159,7 +106,7 @@ namespace SistemBengkel
 
             }
         }
-
+        //proses update
         private void showCustomers_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
           

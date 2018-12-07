@@ -28,159 +28,232 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.masterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.customerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.kendaraanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.barangToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.jasaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.transaksiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.serviceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.penjualanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pembelianToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.laporanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.laporanPenjualanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.laporanPembelianToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.laporanServiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
+            this.panelKendaraan = new System.Windows.Forms.Panel();
+            this.showKendaraanGrid = new System.Windows.Forms.DataGridView();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.platNomorText = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.comboBoxCustomer = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btnSaveKendaraan = new System.Windows.Forms.Button();
+            this.tahunText = new System.Windows.Forms.TextBox();
+            this.merkText = new System.Windows.Forms.TextBox();
+            this.namaKendaraanText = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.panelKendaraan.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.showKendaraanGrid)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // panelKendaraan
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.masterToolStripMenuItem,
-            this.transaksiToolStripMenuItem,
-            this.laporanToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(500, 24);
-            this.menuStrip1.TabIndex = 3;
-            this.menuStrip1.Text = "menuStrip1";
+            this.panelKendaraan.Controls.Add(this.showKendaraanGrid);
+            this.panelKendaraan.Controls.Add(this.groupBox2);
+            this.panelKendaraan.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelKendaraan.Location = new System.Drawing.Point(0, 0);
+            this.panelKendaraan.Name = "panelKendaraan";
+            this.panelKendaraan.Size = new System.Drawing.Size(664, 445);
+            this.panelKendaraan.TabIndex = 4;
             // 
-            // masterToolStripMenuItem
+            // showKendaraanGrid
             // 
-            this.masterToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.customerToolStripMenuItem,
-            this.kendaraanToolStripMenuItem,
-            this.barangToolStripMenuItem,
-            this.jasaToolStripMenuItem});
-            this.masterToolStripMenuItem.Name = "masterToolStripMenuItem";
-            this.masterToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
-            this.masterToolStripMenuItem.Text = "Master";
+            this.showKendaraanGrid.AllowUserToAddRows = false;
+            this.showKendaraanGrid.AllowUserToDeleteRows = false;
+            this.showKendaraanGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.showKendaraanGrid.Location = new System.Drawing.Point(22, 231);
+            this.showKendaraanGrid.Name = "showKendaraanGrid";
+            this.showKendaraanGrid.ReadOnly = true;
+            this.showKendaraanGrid.Size = new System.Drawing.Size(579, 150);
+            this.showKendaraanGrid.TabIndex = 2;
             // 
-            // customerToolStripMenuItem
+            // groupBox2
             // 
-            this.customerToolStripMenuItem.Name = "customerToolStripMenuItem";
-            this.customerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.customerToolStripMenuItem.Text = "Customer";
-            this.customerToolStripMenuItem.Click += new System.EventHandler(this.customerToolStripMenuItem_Click_1);
+            this.groupBox2.Controls.Add(this.platNomorText);
+            this.groupBox2.Controls.Add(this.label6);
+            this.groupBox2.Controls.Add(this.comboBoxCustomer);
+            this.groupBox2.Controls.Add(this.button1);
+            this.groupBox2.Controls.Add(this.button2);
+            this.groupBox2.Controls.Add(this.btnSaveKendaraan);
+            this.groupBox2.Controls.Add(this.tahunText);
+            this.groupBox2.Controls.Add(this.merkText);
+            this.groupBox2.Controls.Add(this.namaKendaraanText);
+            this.groupBox2.Controls.Add(this.label8);
+            this.groupBox2.Controls.Add(this.label9);
+            this.groupBox2.Controls.Add(this.label10);
+            this.groupBox2.Controls.Add(this.label12);
+            this.groupBox2.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(22, 17);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(579, 207);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Kendaraan Form";
             // 
-            // kendaraanToolStripMenuItem
+            // platNomorText
             // 
-            this.kendaraanToolStripMenuItem.Name = "kendaraanToolStripMenuItem";
-            this.kendaraanToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.kendaraanToolStripMenuItem.Text = "Kendaraan";
-            this.kendaraanToolStripMenuItem.Click += new System.EventHandler(this.kendaraanToolStripMenuItem_Click);
+            this.platNomorText.Location = new System.Drawing.Point(151, 154);
+            this.platNomorText.Name = "platNomorText";
+            this.platNomorText.Size = new System.Drawing.Size(275, 21);
+            this.platNomorText.TabIndex = 17;
             // 
-            // barangToolStripMenuItem
+            // label6
             // 
-            this.barangToolStripMenuItem.Name = "barangToolStripMenuItem";
-            this.barangToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
-            this.barangToolStripMenuItem.Text = "Barang";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Kozuka Gothic Pr6N R", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label6.Location = new System.Drawing.Point(24, 145);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(76, 23);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "Plat Nomor";
             // 
-            // jasaToolStripMenuItem
+            // comboBoxCustomer
             // 
-            this.jasaToolStripMenuItem.Name = "jasaToolStripMenuItem";
-            this.jasaToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
-            this.jasaToolStripMenuItem.Text = "Jasa";
+            this.comboBoxCustomer.FormattingEnabled = true;
+            this.comboBoxCustomer.Location = new System.Drawing.Point(151, 34);
+            this.comboBoxCustomer.Name = "comboBoxCustomer";
+            this.comboBoxCustomer.Size = new System.Drawing.Size(275, 23);
+            this.comboBoxCustomer.TabIndex = 15;
+            this.comboBoxCustomer.Text = "- Pilih -";
             // 
-            // transaksiToolStripMenuItem
+            // button1
             // 
-            this.transaksiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.serviceToolStripMenuItem,
-            this.penjualanToolStripMenuItem,
-            this.pembelianToolStripMenuItem});
-            this.transaksiToolStripMenuItem.Name = "transaksiToolStripMenuItem";
-            this.transaksiToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
-            this.transaksiToolStripMenuItem.Text = "Transaksi";
+            this.button1.BackColor = System.Drawing.SystemColors.GrayText;
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(462, 46);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 29);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Reset";
+            this.button1.UseVisualStyleBackColor = false;
             // 
-            // serviceToolStripMenuItem
+            // button2
             // 
-            this.serviceToolStripMenuItem.Name = "serviceToolStripMenuItem";
-            this.serviceToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
-            this.serviceToolStripMenuItem.Text = "Service";
+            this.button2.BackColor = System.Drawing.Color.Red;
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button2.Location = new System.Drawing.Point(462, 132);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 29);
+            this.button2.TabIndex = 13;
+            this.button2.Text = "Delete";
+            this.button2.UseVisualStyleBackColor = false;
             // 
-            // penjualanToolStripMenuItem
+            // btnSaveKendaraan
             // 
-            this.penjualanToolStripMenuItem.Name = "penjualanToolStripMenuItem";
-            this.penjualanToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
-            this.penjualanToolStripMenuItem.Text = "Penjualan";
+            this.btnSaveKendaraan.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnSaveKendaraan.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnSaveKendaraan.Location = new System.Drawing.Point(462, 89);
+            this.btnSaveKendaraan.Name = "btnSaveKendaraan";
+            this.btnSaveKendaraan.Size = new System.Drawing.Size(75, 29);
+            this.btnSaveKendaraan.TabIndex = 11;
+            this.btnSaveKendaraan.Text = "Save";
+            this.btnSaveKendaraan.UseVisualStyleBackColor = false;
+            this.btnSaveKendaraan.Click += new System.EventHandler(this.btnSaveKendaraan_Click);
             // 
-            // pembelianToolStripMenuItem
+            // tahunText
             // 
-            this.pembelianToolStripMenuItem.Name = "pembelianToolStripMenuItem";
-            this.pembelianToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
-            this.pembelianToolStripMenuItem.Text = "Pembelian";
+            this.tahunText.Location = new System.Drawing.Point(151, 124);
+            this.tahunText.Name = "tahunText";
+            this.tahunText.Size = new System.Drawing.Size(275, 21);
+            this.tahunText.TabIndex = 9;
             // 
-            // laporanToolStripMenuItem
+            // merkText
             // 
-            this.laporanToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.laporanPenjualanToolStripMenuItem,
-            this.laporanPembelianToolStripMenuItem,
-            this.laporanServiceToolStripMenuItem});
-            this.laporanToolStripMenuItem.Name = "laporanToolStripMenuItem";
-            this.laporanToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
-            this.laporanToolStripMenuItem.Text = "Laporan";
+            this.merkText.Location = new System.Drawing.Point(151, 95);
+            this.merkText.Name = "merkText";
+            this.merkText.Size = new System.Drawing.Size(275, 21);
+            this.merkText.TabIndex = 8;
             // 
-            // laporanPenjualanToolStripMenuItem
+            // namaKendaraanText
             // 
-            this.laporanPenjualanToolStripMenuItem.Name = "laporanPenjualanToolStripMenuItem";
-            this.laporanPenjualanToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
-            this.laporanPenjualanToolStripMenuItem.Text = "Laporan Penjualan";
+            this.namaKendaraanText.Location = new System.Drawing.Point(151, 65);
+            this.namaKendaraanText.Name = "namaKendaraanText";
+            this.namaKendaraanText.Size = new System.Drawing.Size(275, 21);
+            this.namaKendaraanText.TabIndex = 7;
             // 
-            // laporanPembelianToolStripMenuItem
+            // label8
             // 
-            this.laporanPembelianToolStripMenuItem.Name = "laporanPembelianToolStripMenuItem";
-            this.laporanPembelianToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
-            this.laporanPembelianToolStripMenuItem.Text = "Laporan Pembelian";
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Kozuka Gothic Pr6N R", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label8.Location = new System.Drawing.Point(24, 118);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(48, 23);
+            this.label8.TabIndex = 4;
+            this.label8.Text = "Tahun";
             // 
-            // laporanServiceToolStripMenuItem
+            // label9
             // 
-            this.laporanServiceToolStripMenuItem.Name = "laporanServiceToolStripMenuItem";
-            this.laporanServiceToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
-            this.laporanServiceToolStripMenuItem.Text = "Laporan Service";
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Kozuka Gothic Pr6N R", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label9.Location = new System.Drawing.Point(24, 90);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(38, 23);
+            this.label9.TabIndex = 3;
+            this.label9.Text = "Merk";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Kozuka Gothic Pr6N R", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label10.Location = new System.Drawing.Point(24, 61);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(112, 23);
+            this.label10.TabIndex = 2;
+            this.label10.Text = "Nama Kendaraan";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Kozuka Gothic Pr6N R", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label12.Location = new System.Drawing.Point(24, 35);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(68, 23);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "Customer";
             // 
             // MasterKendaraan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(500, 261);
-            this.Controls.Add(this.menuStrip1);
+            this.ClientSize = new System.Drawing.Size(664, 445);
+            this.Controls.Add(this.panelKendaraan);
             this.Name = "MasterKendaraan";
             this.Text = "Kendaraan";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MasterKendaraan_FormClosing);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.Load += new System.EventHandler(this.MasterKendaraan_Load);
+            this.panelKendaraan.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.showKendaraanGrid)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem masterToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem customerToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem kendaraanToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem barangToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem jasaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem transaksiToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem serviceToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem penjualanToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem pembelianToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem laporanToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem laporanPenjualanToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem laporanPembelianToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem laporanServiceToolStripMenuItem;
+        private System.Windows.Forms.Panel panelKendaraan;
+        private System.Windows.Forms.DataGridView showKendaraanGrid;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.TextBox platNomorText;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox comboBoxCustomer;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnSaveKendaraan;
+        private System.Windows.Forms.TextBox tahunText;
+        private System.Windows.Forms.TextBox merkText;
+        private System.Windows.Forms.TextBox namaKendaraanText;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label12;
+
     }
 }

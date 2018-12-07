@@ -41,8 +41,8 @@ namespace SistemBengkel
                 if (reader.HasRows)
                 {
                     this.Hide();
-                    MasterCustomer mc = new MasterCustomer();
-                    mc.ShowDialog();
+                    Menu menu = new Menu();
+                    menu.ShowDialog();
                 }
                 else
                 {
@@ -54,6 +54,18 @@ namespace SistemBengkel
                 reader.Close();
             }
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Login_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        
 
         
     }
