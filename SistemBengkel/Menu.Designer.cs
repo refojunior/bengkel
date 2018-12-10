@@ -90,12 +90,14 @@
             this.barangToolStripMenuItem.Name = "barangToolStripMenuItem";
             this.barangToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.barangToolStripMenuItem.Text = "Barang";
+            this.barangToolStripMenuItem.Click += new System.EventHandler(this.barangToolStripMenuItem_Click);
             // 
             // jasaToolStripMenuItem
             // 
             this.jasaToolStripMenuItem.Name = "jasaToolStripMenuItem";
             this.jasaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.jasaToolStripMenuItem.Text = "Jasa";
+            this.jasaToolStripMenuItem.Click += new System.EventHandler(this.jasaToolStripMenuItem_Click);
             // 
             // transaksiToolStripMenuItem
             // 

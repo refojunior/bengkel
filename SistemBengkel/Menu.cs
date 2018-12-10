@@ -56,5 +56,23 @@ namespace SistemBengkel
             Login login = new Login();
             login.ShowDialog();
         }
+
+        private void barangToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            myPanel.Controls.Clear();
+            MasterBarang barang = new MasterBarang();
+            barang.TopLevel = false;
+            myPanel.Controls.Add(barang);
+            barang.Show();
+        }
+
+        private void jasaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            myPanel.Controls.Clear();
+            MasterJasa jasa = new MasterJasa();
+            jasa.TopLevel = false;
+            myPanel.Controls.Add(jasa);
+            jasa.Show();
+        }
     }
 }

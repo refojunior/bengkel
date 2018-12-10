@@ -50,8 +50,9 @@ namespace SistemBengkel
                     usernameText.Clear();
                     passwordText.Clear();
                 } 
-               
+                
                 reader.Close();
+                con.Close();
             }
         }
 

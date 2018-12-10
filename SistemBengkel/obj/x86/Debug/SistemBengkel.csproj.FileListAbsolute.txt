@@ -9,3 +9,5 @@ c:\users\refo\documents\visual studio 2010\Projects\SistemBengkel\SistemBengkel\
 c:\users\refo\documents\visual studio 2010\Projects\SistemBengkel\SistemBengkel\obj\x86\Debug\SistemBengkel.Login.resources
 C:\Users\Refo\documents\visual studio 2010\Projects\SistemBengkel\SistemBengkel\obj\x86\Debug\SistemBengkel.csprojResolveAssemblyReference.cache
 C:\Users\Refo\documents\visual studio 2010\Projects\SistemBengkel\SistemBengkel\obj\x86\Debug\SistemBengkel.Menu.resources
+C:\Users\Refo\documents\visual studio 2010\Projects\SistemBengkel\SistemBengkel\obj\x86\Debug\SistemBengkel.MasterBarang.resources
+C:\Users\Refo\documents\visual studio 2010\Projects\SistemBengkel\SistemBengkel\obj\x86\Debug\SistemBengkel.MasterJasa.resources
