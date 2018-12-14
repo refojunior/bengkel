@@ -292,6 +292,7 @@
             this.btnSimpan.TabIndex = 4;
             this.btnSimpan.Text = "Simpan Transaksi";
             this.btnSimpan.UseVisualStyleBackColor = false;
+            this.btnSimpan.Click += new System.EventHandler(this.btnSimpan_Click);
             // 
             // label3
             // 

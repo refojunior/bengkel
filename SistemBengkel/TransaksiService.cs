@@ -51,6 +51,17 @@ namespace SistemBengkel
             return total.ToString();
         }
 
+        private void ResetForm()
+        {
+            kendaraanText.Text = "Click Here...";
+            kendaraanText.ForeColor = System.Drawing.Color.Silver;
+            kdKendaraanLabel.Text = "...";
+            platNomorLabel.Text = "...";
+            tahunLabel.Text = "...";
+            customerLabel.Text = "...";
+            lvService.Items.Clear();
+        }
+
         private void TransaksiService_Load(object sender, EventArgs e)
         {
             lvService.View = View.Details;
@@ -135,6 +146,69 @@ namespace SistemBengkel
         private void bayarText_TextChanged(object sender, EventArgs e)
         {
             kembaliText.Text = Convert.ToString(Convert.ToDouble(bayarText.Text) - Convert.ToDouble(totalText.Text));
+        }
+
+        private void btnSimpan_Click(object sender, EventArgs e)
+        {
+            if (kdKendaraanLabel.Text != "..." && lvService.Items.Count != 0)
+            {
+                //format tanggal kampret ribet amat convertnya
+                string s = dateService.Value.ToString();
+                var date = DateTime.ParseExact(s, "dd/M/yyyy HH.mm.ss", CultureInfo.InvariantCulture);
+                string tgl = date.ToString("yyyy-M-dd HH:mm:ss");
+                string tanggal = tgl.Replace(".", ":");
+
+
+                if (bayarText.Text.Length != 0)
+                {
+                    int total = int.Parse(totalText.Text);
+                    int bayar = int.Parse(bayarText.Text);
+                    if (total > bayar)
+                    {
+                        MessageBox.Show("Pembayaran Kurang!!");
+                    }
+                    else
+                    {
+                        con.Open();
+                        //masuk tabel service utama
+                        string sql = "INSERT INTO tb_service VALUES ('" + tanggal.ToString() + "', '" + kdKendaraanLabel.Text + "', '', '" + totalText.Text + "')";
+
+                        cmd = new SqlCommand(sql, this.con);
+                        cmd.ExecuteNonQuery();
+                        
+                        //masukan detail service disini
+                        string max = "SELECT MAX(id) AS last_id from tb_service";
+                        cmd = new SqlCommand(max, this.con);
+                        reader = cmd.ExecuteReader();
+                        reader.Read();
+                        string latest_id = reader["last_id"].ToString();
+                        con.Close();
+
+                        con.Open();
+                        int n = lvService.Items.Count - 1;
+                        for (int i = 0; i <= n; i++)
+                        {
+                            string insertDetail = "INSERT INTO tb_detail_service VALUES ('" + latest_id + "', '" + lvService.Items[i].SubItems[0].Text + "', '')";
+                            cmd = new SqlCommand(insertDetail, this.con);
+                            cmd.ExecuteNonQuery();
+                        }
+
+                        MessageBox.Show("Transaksi Service berhasil");
+                        con.Close();
+                        ResetForm();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Masukan Nominal Pembayaran!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("ISI SELURUH FORM TERLEBIH DAHULU!!!!");
+            }
+           
+            
         }
 
         
