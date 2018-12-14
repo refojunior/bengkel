@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ListKendaraan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListKendaraan.Designer.cs">
+      <DependentUpon>ListKendaraan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TransaksiService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransaksiService.Designer.cs">
+      <DependentUpon>TransaksiService.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ListKendaraan.resx">
+      <DependentUpon>ListKendaraan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -111,6 +126,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TransaksiService.resx">
+      <DependentUpon>TransaksiService.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

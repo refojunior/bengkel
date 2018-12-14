@@ -27,7 +27,7 @@ namespace SistemBengkel
 
         private void customerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            myPanel.Controls.Clear();
+            //myPanel.Controls.Clear();
             MasterCustomer show = new MasterCustomer();
             show.TopLevel = false;
             myPanel.Controls.Add(show);
@@ -43,7 +43,7 @@ namespace SistemBengkel
 
         private void kendaraanToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            myPanel.Controls.Clear();
+            //myPanel.Controls.Clear();
             MasterKendaraan kendaraan = new MasterKendaraan();
             kendaraan.TopLevel = false;
             myPanel.Controls.Add(kendaraan);
@@ -59,7 +59,7 @@ namespace SistemBengkel
 
         private void barangToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            myPanel.Controls.Clear();
+            //myPanel.Controls.Clear();
             MasterBarang barang = new MasterBarang();
             barang.TopLevel = false;
             myPanel.Controls.Add(barang);
@@ -68,11 +68,19 @@ namespace SistemBengkel
 
         private void jasaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            myPanel.Controls.Clear();
+            //myPanel.Controls.Clear();
             MasterJasa jasa = new MasterJasa();
             jasa.TopLevel = false;
             myPanel.Controls.Add(jasa);
             jasa.Show();
+        }
+
+        private void serviceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TransaksiService service = new TransaksiService();
+            service.TopLevel = false;
+            myPanel.Controls.Add(service);
+            service.Show();
         }
     }
 }

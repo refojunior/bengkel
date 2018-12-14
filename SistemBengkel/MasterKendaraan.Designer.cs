@@ -31,6 +31,7 @@
             this.panelKendaraan = new System.Windows.Forms.Panel();
             this.showKendaraanGrid = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.id_kendaraan = new System.Windows.Forms.Label();
             this.platNomorText = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.comboBoxCustomer = new System.Windows.Forms.ComboBox();
@@ -44,7 +45,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.id_kendaraan = new System.Windows.Forms.Label();
             this.panelKendaraan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.showKendaraanGrid)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -96,6 +96,16 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Kendaraan Form";
+            // 
+            // id_kendaraan
+            // 
+            this.id_kendaraan.AutoSize = true;
+            this.id_kendaraan.Location = new System.Drawing.Point(28, 21);
+            this.id_kendaraan.Name = "id_kendaraan";
+            this.id_kendaraan.Size = new System.Drawing.Size(85, 15);
+            this.id_kendaraan.TabIndex = 17;
+            this.id_kendaraan.Text = "id_kendaraan";
+            this.id_kendaraan.Visible = false;
             // 
             // platNomorText
             // 
@@ -224,16 +234,6 @@
             this.label12.Size = new System.Drawing.Size(68, 23);
             this.label12.TabIndex = 0;
             this.label12.Text = "Customer";
-            // 
-            // id_kendaraan
-            // 
-            this.id_kendaraan.AutoSize = true;
-            this.id_kendaraan.Location = new System.Drawing.Point(28, 21);
-            this.id_kendaraan.Name = "id_kendaraan";
-            this.id_kendaraan.Size = new System.Drawing.Size(85, 15);
-            this.id_kendaraan.TabIndex = 17;
-            this.id_kendaraan.Text = "id_kendaraan";
-            this.id_kendaraan.Visible = false;
             // 
             // MasterKendaraan
             // 

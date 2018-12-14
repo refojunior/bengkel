@@ -74,28 +74,28 @@
             // customerToolStripMenuItem
             // 
             this.customerToolStripMenuItem.Name = "customerToolStripMenuItem";
-            this.customerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.customerToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.customerToolStripMenuItem.Text = "Customer";
             this.customerToolStripMenuItem.Click += new System.EventHandler(this.customerToolStripMenuItem_Click);
             // 
             // kendaraanToolStripMenuItem
             // 
             this.kendaraanToolStripMenuItem.Name = "kendaraanToolStripMenuItem";
-            this.kendaraanToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.kendaraanToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.kendaraanToolStripMenuItem.Text = "Kendaraan";
             this.kendaraanToolStripMenuItem.Click += new System.EventHandler(this.kendaraanToolStripMenuItem_Click);
             // 
             // barangToolStripMenuItem
             // 
             this.barangToolStripMenuItem.Name = "barangToolStripMenuItem";
-            this.barangToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.barangToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.barangToolStripMenuItem.Text = "Barang";
             this.barangToolStripMenuItem.Click += new System.EventHandler(this.barangToolStripMenuItem_Click);
             // 
             // jasaToolStripMenuItem
             // 
             this.jasaToolStripMenuItem.Name = "jasaToolStripMenuItem";
-            this.jasaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.jasaToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.jasaToolStripMenuItem.Text = "Jasa";
             this.jasaToolStripMenuItem.Click += new System.EventHandler(this.jasaToolStripMenuItem_Click);
             // 
@@ -112,19 +112,20 @@
             // serviceToolStripMenuItem
             // 
             this.serviceToolStripMenuItem.Name = "serviceToolStripMenuItem";
-            this.serviceToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.serviceToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.serviceToolStripMenuItem.Text = "Service";
+            this.serviceToolStripMenuItem.Click += new System.EventHandler(this.serviceToolStripMenuItem_Click);
             // 
             // penjualanToolStripMenuItem
             // 
             this.penjualanToolStripMenuItem.Name = "penjualanToolStripMenuItem";
-            this.penjualanToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.penjualanToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.penjualanToolStripMenuItem.Text = "Penjualan";
             // 
             // pembelianToolStripMenuItem
             // 
             this.pembelianToolStripMenuItem.Name = "pembelianToolStripMenuItem";
-            this.pembelianToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.pembelianToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.pembelianToolStripMenuItem.Text = "Pembelian";
             // 
             // laporanToolStripMenuItem
