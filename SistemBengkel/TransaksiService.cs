@@ -60,6 +60,9 @@ namespace SistemBengkel
             tahunLabel.Text = "...";
             customerLabel.Text = "...";
             lvService.Items.Clear();
+            totalText.Text = "0";
+            bayarText.Text = "0";
+            kembaliText.Text = "0";
         }
 
         private void TransaksiService_Load(object sender, EventArgs e)
@@ -210,6 +213,8 @@ namespace SistemBengkel
            
             
         }
+
+       
 
         
 

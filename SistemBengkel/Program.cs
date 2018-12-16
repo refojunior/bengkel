@@ -19,7 +19,7 @@ namespace SistemBengkel
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Login());
-            Application.Run(new TransaksiService());
+            Application.Run(new TransaksiPembelian());
         }
 
 
@@ -34,6 +34,26 @@ namespace SistemBengkel
         public static string tahun { get; set; }
 
         public static string plat_nomor { get; set; }
+
+        public static string idCust { get; set; }
+
+        public static string namaCustomer { get; set; }
+
+        public static string alamat { get; set; }
+
+        public static string email { get; set; }
+
+        public static string telp { get; set; }
+
+        public static string idBarang { get; set; }
+
+        public static string namaBarang { get; set; }
+
+        public static string typeBarang { get; set; }
+
+        public static string merkBarang { get; set; }
+
+        public static string hargaBarang { get; set; }
     }
 
 

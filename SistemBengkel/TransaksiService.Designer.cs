@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panelService = new System.Windows.Forms.Panel();
+            this.dateService = new System.Windows.Forms.DateTimePicker();
+            this.label5 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.kdKendaraanLabel = new System.Windows.Forms.Label();
             this.tahunLabel = new System.Windows.Forms.Label();
@@ -52,8 +54,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.dateService = new System.Windows.Forms.DateTimePicker();
             this.panelService.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -89,6 +89,24 @@
             this.panelService.Size = new System.Drawing.Size(702, 476);
             this.panelService.TabIndex = 0;
             this.panelService.Paint += new System.Windows.Forms.PaintEventHandler(this.panelService_Paint);
+            // 
+            // dateService
+            // 
+            this.dateService.Location = new System.Drawing.Point(479, 28);
+            this.dateService.Name = "dateService";
+            this.dateService.Size = new System.Drawing.Size(200, 20);
+            this.dateService.TabIndex = 26;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Kozuka Gothic Pr6N R", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label5.Location = new System.Drawing.Point(414, 25);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(58, 23);
+            this.label5.TabIndex = 25;
+            this.label5.Text = "Tanggal";
             // 
             // label9
             // 
@@ -326,24 +344,6 @@
             this.label1.Size = new System.Drawing.Size(106, 23);
             this.label1.TabIndex = 1;
             this.label1.Text = "Nama Customer";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Kozuka Gothic Pr6N R", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label5.Location = new System.Drawing.Point(414, 25);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(58, 23);
-            this.label5.TabIndex = 25;
-            this.label5.Text = "Tanggal";
-            // 
-            // dateService
-            // 
-            this.dateService.Location = new System.Drawing.Point(479, 28);
-            this.dateService.Name = "dateService";
-            this.dateService.Size = new System.Drawing.Size(200, 20);
-            this.dateService.TabIndex = 26;
             // 
             // TransaksiService
             // 
