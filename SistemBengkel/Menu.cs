@@ -85,7 +85,7 @@ namespace SistemBengkel
 
         private void penjualanToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            TransaksiPembelian pembelian = new TransaksiPembelian();
+            TransaksiPenjualan pembelian = new TransaksiPenjualan();
             pembelian.TopLevel = false;
             myPanel.Controls.Add(pembelian);
             pembelian.Show();

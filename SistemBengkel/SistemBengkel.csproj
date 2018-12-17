@@ -108,6 +108,12 @@
     <Compile Include="TransaksiPembelian.Designer.cs">
       <DependentUpon>TransaksiPembelian.cs</DependentUpon>
     </Compile>
+    <Compile Include="TransaksiPenjualan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransaksiPenjualan.Designer.cs">
+      <DependentUpon>TransaksiPenjualan.cs</DependentUpon>
+    </Compile>
     <Compile Include="TransaksiService.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +158,9 @@
     </Compile>
     <EmbeddedResource Include="TransaksiPembelian.resx">
       <DependentUpon>TransaksiPembelian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransaksiPenjualan.resx">
+      <DependentUpon>TransaksiPenjualan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TransaksiService.resx">
       <DependentUpon>TransaksiService.cs</DependentUpon>

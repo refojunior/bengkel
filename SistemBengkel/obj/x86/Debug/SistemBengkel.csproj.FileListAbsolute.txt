@@ -13,6 +13,7 @@ C:\Users\Refo\documents\visual studio 2010\Projects\SistemBengkel\SistemBengkel\
 C:\Users\Refo\documents\visual studio 2010\Projects\SistemBengkel\SistemBengkel\obj\x86\Debug\SistemBengkel.MasterJasa.resources
 C:\Users\Refo\Documents\Visual Studio 2010\Projects\SistemBengkel\SistemBengkel\obj\x86\Debug\SistemBengkel.TransaksiService.resources
 C:\Users\Refo\Documents\Visual Studio 2010\Projects\SistemBengkel\SistemBengkel\obj\x86\Debug\SistemBengkel.ListKendaraan.resources
-C:\Users\Refo\documents\visual studio 2010\Projects\SistemBengkel\SistemBengkel\obj\x86\Debug\SistemBengkel.TransaksiPembelian.resources
 C:\Users\Refo\documents\visual studio 2010\Projects\SistemBengkel\SistemBengkel\obj\x86\Debug\SistemBengkel.ListCustomer.resources
 C:\Users\Refo\documents\visual studio 2010\Projects\SistemBengkel\SistemBengkel\obj\x86\Debug\SistemBengkel.ListBarang.resources
+C:\Users\Refo\documents\visual studio 2010\Projects\SistemBengkel\SistemBengkel\obj\x86\Debug\SistemBengkel.TransaksiPenjualan.resources
+C:\Users\Refo\documents\visual studio 2010\Projects\SistemBengkel\SistemBengkel\obj\x86\Debug\SistemBengkel.TransaksiPembelian.resources
