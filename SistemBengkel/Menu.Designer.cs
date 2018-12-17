@@ -39,12 +39,12 @@
             this.penjualanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pembelianToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.laporanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.laporanStockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.laporanPenjualanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.laporanPembelianToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.laporanServiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.myPanel = new System.Windows.Forms.Panel();
-            this.laporanStockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -142,11 +142,19 @@
             this.laporanToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
             this.laporanToolStripMenuItem.Text = "Laporan";
             // 
+            // laporanStockToolStripMenuItem
+            // 
+            this.laporanStockToolStripMenuItem.Name = "laporanStockToolStripMenuItem";
+            this.laporanStockToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.laporanStockToolStripMenuItem.Text = "Laporan Stock";
+            this.laporanStockToolStripMenuItem.Click += new System.EventHandler(this.laporanStockToolStripMenuItem_Click);
+            // 
             // laporanPenjualanToolStripMenuItem
             // 
             this.laporanPenjualanToolStripMenuItem.Name = "laporanPenjualanToolStripMenuItem";
             this.laporanPenjualanToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.laporanPenjualanToolStripMenuItem.Text = "Laporan Penjualan";
+            this.laporanPenjualanToolStripMenuItem.Click += new System.EventHandler(this.laporanPenjualanToolStripMenuItem_Click);
             // 
             // laporanPembelianToolStripMenuItem
             // 
@@ -174,13 +182,6 @@
             this.myPanel.Name = "myPanel";
             this.myPanel.Size = new System.Drawing.Size(1380, 720);
             this.myPanel.TabIndex = 4;
-            // 
-            // laporanStockToolStripMenuItem
-            // 
-            this.laporanStockToolStripMenuItem.Name = "laporanStockToolStripMenuItem";
-            this.laporanStockToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
-            this.laporanStockToolStripMenuItem.Text = "Laporan Stock";
-            this.laporanStockToolStripMenuItem.Click += new System.EventHandler(this.laporanStockToolStripMenuItem_Click);
             // 
             // Menu
             // 

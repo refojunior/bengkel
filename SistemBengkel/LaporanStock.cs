@@ -91,7 +91,7 @@ namespace SistemBengkel
                 while (reader.Read())
                 {
                     item = new ListViewItem();
-                    item.Text = reader["id"].ToString();
+                    item.Text = "BR-"+reader["id"].ToString();
                     item.SubItems.Add(reader["nama_barang"].ToString());
                     item.SubItems.Add(reader["tipe_barang"].ToString());
                     item.SubItems.Add(reader["merk"].ToString());

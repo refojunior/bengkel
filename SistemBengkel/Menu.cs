@@ -106,5 +106,13 @@ namespace SistemBengkel
             myPanel.Controls.Add(variable);
             variable.Show();
         }
+
+        private void laporanPenjualanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LaporanPenjualan variable = new LaporanPenjualan();
+            variable.TopLevel = false;
+            myPanel.Controls.Add(variable);
+            variable.Show();
+        }
     }
 }

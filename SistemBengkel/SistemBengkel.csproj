@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LaporanPenjualan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LaporanPenjualan.Designer.cs">
+      <DependentUpon>LaporanPenjualan.cs</DependentUpon>
+    </Compile>
     <Compile Include="LaporanStock.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,9 @@
     <Compile Include="TransaksiService.Designer.cs">
       <DependentUpon>TransaksiService.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="LaporanPenjualan.resx">
+      <DependentUpon>LaporanPenjualan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LaporanStock.resx">
       <DependentUpon>LaporanStock.cs</DependentUpon>
     </EmbeddedResource>
