@@ -90,5 +90,21 @@ namespace SistemBengkel
             myPanel.Controls.Add(pembelian);
             pembelian.Show();
         }
+
+        private void pembelianToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TransaksiPembelian pembelian = new TransaksiPembelian();
+            pembelian.TopLevel = false;
+            myPanel.Controls.Add(pembelian);
+            pembelian.Show();
+        }
+
+        private void laporanStockToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LaporanStock variable = new LaporanStock();
+            variable.TopLevel = false;
+            myPanel.Controls.Add(variable);
+            variable.Show();
+        }
     }
 }

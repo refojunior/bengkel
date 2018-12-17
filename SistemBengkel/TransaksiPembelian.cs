@@ -43,6 +43,7 @@ namespace SistemBengkel
             hargaText.Clear();
             qtyText.Text = "0";
             lvPembelian.Items.Clear();
+            grandTotalText.Text = "0";
           
         }
 
@@ -133,7 +134,7 @@ namespace SistemBengkel
                 int n = lvPembelian.Items.Count - 1;
                 for (int i = 0; i <= n; i++)
                 {
-                    string insertDetail = "INSERT INTO tb_detail_penjualan VALUES ('" + latest_id + "', '" + lvPembelian.Items[i].SubItems[0].Text + "', '" + lvPembelian.Items[i].SubItems[4].Text + "' , '" + lvPembelian.Items[i].SubItems[5].Text + "')";
+                    string insertDetail = "INSERT INTO tb_detail_pembelian VALUES ('" + latest_id + "', '" + lvPembelian.Items[i].SubItems[0].Text + "', '" + lvPembelian.Items[i].SubItems[4].Text + "' , '" + lvPembelian.Items[i].SubItems[5].Text + "')";
                     cmd = new SqlCommand(insertDetail, this.con);
                     cmd.ExecuteNonQuery();
                 }

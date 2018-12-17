@@ -44,6 +44,7 @@
             this.laporanServiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.myPanel = new System.Windows.Forms.Panel();
+            this.laporanStockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -128,10 +129,12 @@
             this.pembelianToolStripMenuItem.Name = "pembelianToolStripMenuItem";
             this.pembelianToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.pembelianToolStripMenuItem.Text = "Pembelian";
+            this.pembelianToolStripMenuItem.Click += new System.EventHandler(this.pembelianToolStripMenuItem_Click);
             // 
             // laporanToolStripMenuItem
             // 
             this.laporanToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.laporanStockToolStripMenuItem,
             this.laporanPenjualanToolStripMenuItem,
             this.laporanPembelianToolStripMenuItem,
             this.laporanServiceToolStripMenuItem});
@@ -172,6 +175,13 @@
             this.myPanel.Size = new System.Drawing.Size(1380, 720);
             this.myPanel.TabIndex = 4;
             // 
+            // laporanStockToolStripMenuItem
+            // 
+            this.laporanStockToolStripMenuItem.Name = "laporanStockToolStripMenuItem";
+            this.laporanStockToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.laporanStockToolStripMenuItem.Text = "Laporan Stock";
+            this.laporanStockToolStripMenuItem.Click += new System.EventHandler(this.laporanStockToolStripMenuItem_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -209,6 +219,7 @@
         private System.Windows.Forms.ToolStripMenuItem laporanServiceToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
         private System.Windows.Forms.Panel myPanel;
+        private System.Windows.Forms.ToolStripMenuItem laporanStockToolStripMenuItem;
 
 
     }
