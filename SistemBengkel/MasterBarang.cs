@@ -15,7 +15,7 @@ namespace SistemBengkel
     {
         CultureInfo idn = new CultureInfo("id-ID");
 
-        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-A2SP6M1;Initial Catalog=bengkel;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=(local);Initial Catalog=bengkel;Integrated Security=True");
         SqlCommand cmd = null;
         SqlDataReader reader = null;
 
