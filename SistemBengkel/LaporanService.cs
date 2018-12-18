@@ -69,9 +69,18 @@ namespace SistemBengkel
             string[] arrs = tanggals.Split(' ');
             string sampai = arrs[0];
 
+            if (date > dates)
+            {
+                MessageBox.Show("Format tanggal tidak valid!!!");
+            }
+            else
+            {
+                LoadData(dari, sampai);
+            }
 
 
-            LoadData(dari, sampai);
+
+            
         }
     }
 }

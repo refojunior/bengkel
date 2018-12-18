@@ -114,8 +114,16 @@ namespace SistemBengkel
             string sampai = arrs[0];
 
 
+            if (date > dates)
+            {
+                MessageBox.Show("Format tanggal tidak valid!!!");
+            }
+            else
+            {
+                LoadData(dari, sampai, comboBox1.Text);
+            }
 
-            LoadData(dari, sampai, comboBox1.Text);
+            
         }
     }
 }
