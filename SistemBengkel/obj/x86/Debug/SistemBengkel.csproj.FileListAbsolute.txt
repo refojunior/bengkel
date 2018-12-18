@@ -19,3 +19,5 @@ C:\Users\Refo\documents\visual studio 2010\Projects\SistemBengkel\SistemBengkel\
 C:\Users\Refo\documents\visual studio 2010\Projects\SistemBengkel\SistemBengkel\obj\x86\Debug\SistemBengkel.TransaksiPembelian.resources
 C:\Users\Refo\documents\visual studio 2010\Projects\SistemBengkel\SistemBengkel\obj\x86\Debug\SistemBengkel.LaporanStock.resources
 C:\Users\Refo\documents\visual studio 2010\Projects\SistemBengkel\SistemBengkel\obj\x86\Debug\SistemBengkel.LaporanPenjualan.resources
+C:\Users\Refo\documents\visual studio 2010\Projects\SistemBengkel\SistemBengkel\obj\x86\Debug\SistemBengkel.LaporanPembelian.resources
+C:\Users\Refo\documents\visual studio 2010\Projects\SistemBengkel\SistemBengkel\obj\x86\Debug\SistemBengkel.LaporanService.resources

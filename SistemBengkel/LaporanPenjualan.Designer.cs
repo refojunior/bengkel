@@ -50,6 +50,7 @@
             this.label1.Size = new System.Drawing.Size(142, 23);
             this.label1.TabIndex = 35;
             this.label1.Text = "LAPORAN PENJUALAN";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -61,6 +62,7 @@
             this.label2.Size = new System.Drawing.Size(69, 23);
             this.label2.TabIndex = 36;
             this.label2.Text = "Kategori : ";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -72,6 +74,7 @@
             this.label3.Size = new System.Drawing.Size(36, 23);
             this.label3.TabIndex = 37;
             this.label3.Text = "Dari ";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -83,6 +86,7 @@
             this.label4.Size = new System.Drawing.Size(54, 23);
             this.label4.TabIndex = 38;
             this.label4.Text = "Sampai";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // dateTimePicker1
             // 
@@ -90,6 +94,7 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 39;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // dateTimePicker2
             // 
@@ -97,6 +102,7 @@
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker2.TabIndex = 40;
+            this.dateTimePicker2.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
             // 
             // comboBox1
             // 
@@ -110,6 +116,7 @@
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 41;
             this.comboBox1.Text = "Semua Kategori";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // dataGridView1
             // 
@@ -121,6 +128,7 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(804, 288);
             this.dataGridView1.TabIndex = 42;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // button1
             // 

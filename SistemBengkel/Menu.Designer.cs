@@ -113,21 +113,21 @@
             // serviceToolStripMenuItem
             // 
             this.serviceToolStripMenuItem.Name = "serviceToolStripMenuItem";
-            this.serviceToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.serviceToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.serviceToolStripMenuItem.Text = "Service";
             this.serviceToolStripMenuItem.Click += new System.EventHandler(this.serviceToolStripMenuItem_Click);
             // 
             // penjualanToolStripMenuItem
             // 
             this.penjualanToolStripMenuItem.Name = "penjualanToolStripMenuItem";
-            this.penjualanToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.penjualanToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.penjualanToolStripMenuItem.Text = "Penjualan";
             this.penjualanToolStripMenuItem.Click += new System.EventHandler(this.penjualanToolStripMenuItem_Click);
             // 
             // pembelianToolStripMenuItem
             // 
             this.pembelianToolStripMenuItem.Name = "pembelianToolStripMenuItem";
-            this.pembelianToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.pembelianToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.pembelianToolStripMenuItem.Text = "Pembelian";
             this.pembelianToolStripMenuItem.Click += new System.EventHandler(this.pembelianToolStripMenuItem_Click);
             // 
@@ -161,12 +161,14 @@
             this.laporanPembelianToolStripMenuItem.Name = "laporanPembelianToolStripMenuItem";
             this.laporanPembelianToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.laporanPembelianToolStripMenuItem.Text = "Laporan Pembelian";
+            this.laporanPembelianToolStripMenuItem.Click += new System.EventHandler(this.laporanPembelianToolStripMenuItem_Click);
             // 
             // laporanServiceToolStripMenuItem
             // 
             this.laporanServiceToolStripMenuItem.Name = "laporanServiceToolStripMenuItem";
             this.laporanServiceToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.laporanServiceToolStripMenuItem.Text = "Laporan Service";
+            this.laporanServiceToolStripMenuItem.Click += new System.EventHandler(this.laporanServiceToolStripMenuItem_Click);
             // 
             // logoutToolStripMenuItem
             // 

@@ -46,11 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LaporanPembelian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LaporanPembelian.Designer.cs">
+      <DependentUpon>LaporanPembelian.cs</DependentUpon>
+    </Compile>
     <Compile Include="LaporanPenjualan.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LaporanPenjualan.Designer.cs">
       <DependentUpon>LaporanPenjualan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LaporanService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LaporanService.Designer.cs">
+      <DependentUpon>LaporanService.cs</DependentUpon>
     </Compile>
     <Compile Include="LaporanStock.cs">
       <SubType>Form</SubType>
@@ -132,8 +144,14 @@
     <Compile Include="TransaksiService.Designer.cs">
       <DependentUpon>TransaksiService.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="LaporanPembelian.resx">
+      <DependentUpon>LaporanPembelian.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LaporanPenjualan.resx">
       <DependentUpon>LaporanPenjualan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaporanService.resx">
+      <DependentUpon>LaporanService.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LaporanStock.resx">
       <DependentUpon>LaporanStock.cs</DependentUpon>
